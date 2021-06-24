@@ -1,15 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav" class="bg-gray-500">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="bg-gray-900 flex w-full min-h-screen text-gray-400">
+    <div id="nav" class="bg-gray-800 w-1/12 shadow-2xl flex flex-col items-center justify-center">
+      <router-link to="/" class="bg-gray-700 w-full text-center p-2 border-b border-red-500">Home</router-link>
+      <router-link to="/about" class="bg-gray-700 w-full text-center p-2 border-b border-red-500">About</router-link>
     </div>
-    <router-view/>
+    <div class="w-11/12">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <style lang="postcss">
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,5 +31,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
