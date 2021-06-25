@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="flex flex-row min-h-screen text-gray-400">
-    <div id="nav" class="bg-secondary w-1/12 shadow-2xl flex flex-col items-center h-screen fixed">
+    <div id="nav" class="bg-gray-900 w-1/12 shadow-2xl flex flex-col items-center h-screen fixed">
       <div class="mt-10">
         <img src="./assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-24 h-24 rounded-full">
       </div>
@@ -30,7 +30,7 @@
         </a>
       </div>
     </div>
-    <div class="w-11/12 ml-auto bg-primary">
+    <div class="w-11/12 ml-auto bg-teritary">
       <router-view/>
     </div>
   </div>
