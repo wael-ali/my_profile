@@ -30,7 +30,7 @@
         </a>
       </div>
     </div>
-    <div class="w-11/12 ml-auto bg-teritary">
+    <div class="w-11/12 ml-auto bg-teritary home">
       <router-view/>
     </div>
   </div>
@@ -59,5 +59,11 @@
 #nav a.router-link-exact-active {
   color: #42b983;
   @apply bg-teritary border-b border-red-500 rounded;
+}
+
+.home {
+  background-image: linear-gradient(to bottom, rgba(32, 34, 37, 0.88), rgba(32, 34, 37, 0.99)), url("./assets/bg_img1.jpg");
+  background-size: cover;
+  /*background-image: linear-gradient(red, yellow);*/
 }
 </style>

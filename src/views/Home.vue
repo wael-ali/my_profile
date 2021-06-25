@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex place-items-center place-content-center home">
+  <div class="w-full h-full flex place-items-center place-content-center">
     <!-- <h1 class="text-5xl">Welcome</h1> -->
     <!-- <div class="flex flex-col items-center bg-gray-100 w-1/3 p-10 rounded-lg shadow-2xl"> -->
 <!--      <img src="../assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-80 h-80 rounded-full">-->
@@ -25,9 +25,8 @@ export default {
 </script>
 
 <style>
-  .home {
+  /* .home {
     background-image: linear-gradient(to bottom, rgba(32, 34, 37, 0.85), rgba(32, 34, 37, 0.95)), url("../assets/bg_img1.jpg");
     background-size: cover;
-    /*background-image: linear-gradient(red, yellow);*/
-  }
+  } */
 </style>
