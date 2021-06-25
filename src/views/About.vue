@@ -23,22 +23,24 @@
     <div class="w-full">
       <div class="flex flex-row w-full">
         <div class="w-full flex flex-col items-center">
-          <img src="../assets/bootstrap_logo.svg" alt="Bootstrap logo" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/bootstrap2_logo.svg" alt="Bootstrap logo" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/nodejs_logo.svg" alt="Nodejs logo" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/react_logo.svg" alt="React js logo" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/mysql_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/ts_node_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/mongodb_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/rails2_logo.png" alt="" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/docker_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
         </div>
         <div class="w-full flex flex-col items-center">
           <img src="../assets/tailwind_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
-          <img src="../assets/new-php-logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
-          <img src="../assets/logo.png" alt="" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/php2_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/vue_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/js_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/css3_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
           <img src="../assets/html5_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
-          <img src="../assets/symfony_white_03.svg" alt="" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/symfony_05.svg" alt="" srcset="" class="mb-2 w-24 h-24">
+          <img src="../assets/git_logo.svg" alt="" srcset="" class="mb-2 w-24 h-24">
         </div>
       </div>
     </div>
