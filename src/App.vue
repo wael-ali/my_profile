@@ -1,10 +1,13 @@
 <template>
-  <div id="app" class="bg-gray-900 flex w-full min-h-screen text-gray-400">
-    <div id="nav" class="bg-gray-800 w-1/12 shadow-2xl flex flex-col items-center justify-center">
-      <router-link to="/" class="bg-gray-700 w-full text-center p-2 border-b border-red-500">Home</router-link>
-      <router-link to="/about" class="bg-gray-700 w-full text-center p-2 border-b border-red-500">About</router-link>
+  <div id="app" class="flex flex-row min-h-screen text-gray-400">
+    <div id="nav" class="bg-secondary w-1/12 shadow-2xl flex flex-col items-center h-screen fixed">
+      <img src="./assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-24 h-24 rounded-full">
+      <div class="flex flex-col items-center h-full justify-center">
+        <router-link to="/about" class="w-full text-center p-2">About</router-link>
+        <router-link to="/" class="w-full text-center p-2 ">Home</router-link>
+      </div>
     </div>
-    <div class="w-11/12">
+    <div class="w-11/12 ml-auto bg-primary">
       <router-view/>
     </div>
   </div>
@@ -18,18 +21,20 @@
   text-align: center;
   color: #2c3e50;
   @apply bg-green-50;
-}
+} */
 
 #nav {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  /* color: ; */
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
-} */
+  @apply bg-teritary border-b border-red-500 rounded;
+}
 </style>
