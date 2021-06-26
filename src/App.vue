@@ -14,7 +14,7 @@
         <router-link to="#" class="w-full text-center p-2 ">
           <font-awesome-icon icon="id-card" size="2x"/>
         </router-link>
-        <router-link to="#" class="w-full text-center p-2 ">
+        <router-link to="/contact" class="w-full text-center p-2 ">
           <font-awesome-icon icon="envelope" size="2x"/>
         </router-link>
       </div>
@@ -64,6 +64,5 @@
 .home {
   background-image: linear-gradient(to bottom, rgba(32, 34, 37, 0.88), rgba(32, 34, 37, 0.99)), url("./assets/bg_img1.jpg");
   background-size: cover;
-  /*background-image: linear-gradient(red, yellow);*/
 }
 </style>
