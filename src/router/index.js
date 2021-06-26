@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import Skills from '../views/Skills.vue'
 import PageNotFound from '../views/PageNotFound.vue'
+import Backend from '../components/skills/Backend.vue'
+import Frontend from '../components/skills/Frontend.vue'
+import Other from '../components/skills/Other.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +24,21 @@ const routes = [
   {
     path: '/skills',
     name: 'skills',
-    component: Skills
+    component: Skills,
+    children: [
+      {
+        path: 'backend',
+        component: Backend
+      },
+      {
+        path: 'frontend',
+        component: Frontend
+      },
+      {
+        path: 'other',
+        component: Other
+      }
+    ]
   },
   {
     path: '/about',

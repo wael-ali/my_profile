@@ -37,14 +37,14 @@
 </template>
 
 <style lang="postcss">
-/* #app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center;
   color: #2c3e50;
-  @apply bg-green-50;
-} */
+  @apply bg-green-50; */
+}
 
 #nav {
   /* padding: 30px; */
@@ -65,4 +65,21 @@
   background-image: linear-gradient(to bottom, rgba(32, 34, 37, 0.88), rgba(32, 34, 37, 0.99)), url("./assets/bg_img1.jpg");
   background-size: cover;
 }
+/* width */
+/* ::-webkit-scrollbar {
+  width: .5em;
+} */
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+} */
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: red;
+} */
 </style>

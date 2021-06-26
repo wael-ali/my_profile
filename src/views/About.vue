@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full flex flex-row items-center leading-tight">
-    <div class="w-full pl-10">
+    <div class="w-full pl-20">
       <div class="italic tracking-widest font-semibold">
         <h1 class="text-7xl mb-10">Myself & I</h1>
         <p class="mb-8 text-2xl">
