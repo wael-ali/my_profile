@@ -1,9 +1,8 @@
 <template>
-  <div class="h-full w-full flex flex-row items-center">
+  <div class="h-full w-full flex flex-row items-center leading-tight">
     <div class="w-full pl-10">
-      <div class="">
-<!--              <img src="../assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-80 h-80 rounded-full">-->
-        <h1 class="text-9xl mb-10">Myself & I</h1>
+      <div class="italic tracking-widest font-semibold">
+        <h1 class="text-7xl mb-10">Myself & I</h1>
         <p class="mb-8 text-2xl">
           I’m a Fullstack Developer located in Germany (Hamburg).
         </p>
@@ -15,7 +14,7 @@
           Interested in the entire frontend/backend spectrums and willing to work on ambitious projects with positive people.
         </p>
         <p class="mb-8 text-2xl">
-          <a href="#">Let's make something special</a>
+          <a href="#">Let's make something special.</a>
         </p>
       </div>
     </div>
