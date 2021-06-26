@@ -1,14 +1,21 @@
 <template>
-  <div class="w-full h-full flex place-items-center place-content-center">
-    <!-- <h1 class="text-5xl">Welcome</h1> -->
-    <!-- <div class="flex flex-col items-center bg-gray-100 w-1/3 p-10 rounded-lg shadow-2xl"> -->
-<!--      <img src="../assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-80 h-80 rounded-full">-->
-<!--    <a href='https://www.freepik.com/free-photos-vectors/banner'>Banner vector created by vectorpouch - www.freepik.com</a>-->
-      <!-- <h5 class="text-2xl font-semibold mt-5">Some Image information</h5>
-      <p class="text-center mt-5"><span class="text-purple-900 font-semibold">Lorem ipsum </span> dolor sit amet, consectetur adipisicing elit. Deleniti, ab? Necessitatibus pariatur corrupti quas architecto tempore temporibus quae facere beatae.</p> -->
-    <!-- </div> -->
-    <!-- <img alt="Vue logo" src="../assets/logo.png" class="max-auto">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div class="w-full h-full flex place-items-center">
+    <div class="ml-20">
+      <h1 class="mb-10 text-7xl font-semibold leading-tight">
+        <i>
+          Hi, <br/>
+          I'm Wael Ali, <br/>
+          web developer
+        </i>
+      </h1>
+      <p class="mb-20 tracking-widest font-semibold">Fullstack Developer / Back End Developer</p>
+      <p>
+        <span
+        class="contact_me_btn py-3 px-20 border-2 border-green-600 text-green-600 tracking-widest font-semibold rounded cursor-pointer"
+        @click="goToContactPage"
+        >Contact me!</span>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -20,13 +27,30 @@ export default {
   name: 'Home',
   components: {
     // HelloWorld
+  },
+  methods: {
+    goToContactPage () {
+      alert('Contact page not implemented yet')
+    }
   }
 }
 </script>
 
-<style>
-  /* .home {
-    background-image: linear-gradient(to bottom, rgba(32, 34, 37, 0.85), rgba(32, 34, 37, 0.95)), url("../assets/bg_img1.jpg");
-    background-size: cover;
-  } */
+<style lang="postcss">
+  .contact_me_btn {
+    position: relative;
+  }
+  .contact_me_btn:hover:after {
+    display: inline;
+    content: 'Contact me !';
+    @apply bg-green-600 w-full;
+  }
+  .contact_me_btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    @apply bg-green-600 w-0 h-full text-teritary text-center py-2;
+    transition: width 0.4s;
+  }
 </style>
