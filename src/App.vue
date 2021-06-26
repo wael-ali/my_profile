@@ -6,16 +6,16 @@
       </div>
       <div class="flex flex-col items-center h-full justify-center">
         <router-link to="/" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="home" size="2x"/>
+          <font-awesome-icon icon="home" size="2x" title="Home"/>
         </router-link>
         <router-link to="/about" class="w-full text-center p-2">
-          <font-awesome-icon icon="user" size="2x" />
+          <font-awesome-icon icon="user" size="2x" title="About"/>
         </router-link>
         <router-link to="skills" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="id-card" size="2x"/>
+          <font-awesome-icon icon="id-card" size="2x" title="Skills"/>
         </router-link>
         <router-link to="/contact" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="envelope" size="2x"/>
+          <font-awesome-icon icon="envelope" size="2x" title="Contact Me"/>
         </router-link>
       </div>
       <div class="mb-10">
