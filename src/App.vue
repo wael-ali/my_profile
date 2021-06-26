@@ -5,11 +5,11 @@
         <img src="./assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-24 h-24 rounded-full">
       </div>
       <div class="flex flex-col items-center h-full justify-center">
-        <router-link to="/about" class="w-full text-center p-2">
-          <font-awesome-icon icon="user" size="2x" />
-        </router-link>
         <router-link to="/" class="w-full text-center p-2 ">
           <font-awesome-icon icon="home" size="2x"/>
+        </router-link>
+        <router-link to="/about" class="w-full text-center p-2">
+          <font-awesome-icon icon="user" size="2x" />
         </router-link>
         <router-link to="skills" class="w-full text-center p-2 ">
           <font-awesome-icon icon="id-card" size="2x"/>
