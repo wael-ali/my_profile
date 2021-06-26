@@ -11,7 +11,7 @@
         <router-link to="/" class="w-full text-center p-2 ">
           <font-awesome-icon icon="home" size="2x"/>
         </router-link>
-        <router-link to="#" class="w-full text-center p-2 ">
+        <router-link to="skills" class="w-full text-center p-2 ">
           <font-awesome-icon icon="id-card" size="2x"/>
         </router-link>
         <router-link to="/contact" class="w-full text-center p-2 ">
