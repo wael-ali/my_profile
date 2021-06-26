@@ -1,12 +1,10 @@
 <template>
   <div class="w-full h-full flex place-items-center">
     <div class="ml-20">
-      <h1 class="mb-10 text-7xl font-semibold leading-tight">
-        <i>
-          Hi, <br/>
-          I'm Wael Ali, <br/>
-          web developer
-        </i>
+      <h1 class="mb-10 text-7xl font-semibold leading-tight italic">
+        Hi, <br/>
+        I'm Wael Ali, <br/>
+        web developer
       </h1>
       <p class="mb-20 tracking-widest font-semibold">Fullstack Developer / Back End Developer</p>
       <p>
