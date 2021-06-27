@@ -26,7 +26,7 @@
         <a href="#" class="w-full text-center p-2 ">
           <font-awesome-icon :icon="['fab', 'xing-square']" size="2x"/>
         </a>
-        <a href="https://www.linkedin.com/in/wael-ali-b99a61162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOFVIWLPLQAaQZJLD1y6Ybw%3D%3D" class="w-full text-center p-2 ">
+        <a href="https://www.linkedin.com/in/wael-ali-b99a61162" class="w-full text-center p-2 ">
           <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"/>
         </a>
         <a to="#" class="w-full text-center p-2 ">
