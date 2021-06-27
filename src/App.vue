@@ -2,7 +2,11 @@
   <div id="app" class="flex flex-row min-h-screen text-gray-400">
     <div id="nav" class="bg-gray-900 w-1/12 shadow-2xl flex flex-col items-center h-screen fixed">
       <div class="mt-10">
-        <img src="./assets/my_github_imag.jpeg" alt="Random image" srcset="" class="w-24 h-24 rounded-full">
+        <img src="./assets/my_github_imag.jpeg"
+          alt="Wael Ali foto"
+          class="w-24 h-24 rounded-full"
+          @click="goToHomePage"
+        >
       </div>
       <div class="flex flex-col items-center h-full justify-center">
         <router-link to="/" class="w-full text-center p-2 ">
@@ -19,10 +23,10 @@
         </router-link>
       </div>
       <div class="mb-10">
-        <a to="#" class="w-full text-center p-2 ">
+        <a href="#" class="w-full text-center p-2 ">
           <font-awesome-icon :icon="['fab', 'xing-square']" size="2x"/>
         </a>
-        <a to="#" class="w-full text-center p-2 ">
+        <a href="https://www.linkedin.com/in/wael-ali-b99a61162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOFVIWLPLQAaQZJLD1y6Ybw%3D%3D" class="w-full text-center p-2 ">
           <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"/>
         </a>
         <a to="#" class="w-full text-center p-2 ">
@@ -35,6 +39,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  methods: {
+    goToHomePage () {
+      this.$router.push({ name: 'Home' })
+    }
+  }
+}
+</script>
 
 <style lang="postcss">
 #app {
