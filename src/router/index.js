@@ -27,14 +27,17 @@ const routes = [
     component: Skills,
     children: [
       {
+        name: 'backend-skills',
         path: 'backend',
         component: Backend
       },
       {
+        name: 'frontend-skills',
         path: 'frontend',
         component: Frontend
       },
       {
+        name: 'other-skills',
         path: 'other',
         component: Other
       }
@@ -59,6 +62,14 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.path === '/skills/skills') {
+    next({ name: 'skills' })
+  } else {
+    next()
+  }
 })
 
 export default router
