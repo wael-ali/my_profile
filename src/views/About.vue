@@ -13,8 +13,8 @@
         <p class="mb-8 text-2xl">
           Interested in the entire frontend/backend spectrums and willing to work on ambitious projects with positive people.
         </p>
-        <p class="mb-8 text-2xl">
-          <a href="#">Let's make something special.</a>
+        <p class="mb-8 text-xl">
+          <span @click="goToContact" class="text-green-600 cursor-pointer">Let's make something special.</span>
         </p>
       </div>
     </div>
@@ -48,6 +48,11 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  methods: {
+    goToContact () {
+      this.$router.push({ name: 'contact' })
+    }
+  }
 }
 </script>

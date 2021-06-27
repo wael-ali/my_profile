@@ -28,13 +28,13 @@ export default {
   },
   methods: {
     goToContactPage () {
-      alert('Contact page not implemented yet')
+      this.$router.push({ name: 'contact' })
     }
   }
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
   .contact_me_btn {
     position: relative;
   }
