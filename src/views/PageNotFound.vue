@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full flex place-items-center">
-    <div class="ml-20">
-      <h1 class="mb-10 text-7xl font-semibold leading-snug italic">
+    <div class="mt-20 md:ml-20">
+      <h1 class="mb-10 lg:text-7xl font-semibold leading-snug italic">
         <span class="text-8xl text-pink-700">404</span><br>
         <span class="border-b-4 border-pink-700 pb-3">Page Not Found!!</span>
       </h1>
