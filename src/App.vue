@@ -5,17 +5,7 @@
     <div class="flex flex-col md:flex-row p-6 md:p-0">
       <div class="bg-gray-900 md:w-2/12 xl:w-1/12 md:fixed">
         <navigation />
-        <!-- <div class="h-full flex flex-col md:h-screen bg-pink-700 p-2">
-          <div class="bg-blue-600">
-            one
-          </div>
-          <div class="md:h-full bg-yellow-300">
-            two
-          </div>
-          <div class="mt-auto bg-blue-600">
-            three
-          </div>
-        </div> -->
+
       </div>
       <div class="min-h-screen w-full md:w-10/12 xl:w-11/12 ml-auto">
         <router-view/>
