@@ -3,7 +3,7 @@
   <div id="app" class="w-screen min-h-screen bg-teritary text-gray-400 home">
     <!-- <div class="w-full md:w-2/12 bg-gray-900 shadow-2xl flex flex-col items-center content-center md:min-h-screen md:fixed"> -->
     <div class="flex flex-col md:flex-row p-6 md:p-0">
-      <div class="bg-gray-900 md:w-2/12 lg:w-1/12 md:fixed">
+      <div class="bg-gray-900 md:w-2/12 xl:w-1/12 md:fixed">
         <navigation />
         <!-- <div class="h-full flex flex-col md:h-screen bg-pink-700 p-2">
           <div class="bg-blue-600">
@@ -17,7 +17,7 @@
           </div>
         </div> -->
       </div>
-      <div class="min-h-screen md:w-10/12 lg:w-11/12 ml-auto">
+      <div class="min-h-screen w-full md:w-10/12 xl:w-11/12 ml-auto">
         <router-view/>
       </div>
     </div>
