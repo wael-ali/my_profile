@@ -6,7 +6,7 @@
           <div class="ml-4 md:mx-auto">
             <img src="@/assets/my_github_imag.jpeg"
                  alt="Wael Ali foto"
-                 class="w-16 h-16 sm:w-14 sm:h-12 md:w-24 md:h-24 rounded-full"
+                 class="w-16 h-16 sm:w-14 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full"
                  @click="goToHomePage"
             >
           </div>
