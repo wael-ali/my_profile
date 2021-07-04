@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-full flex items-center">
-    <div class="ml-20 w-full">
-      <h2 class="mb-10 text-7xl font-semibold leading-tight text-green-600 italic">
+  <div class="w-full h-full flex flex-col lg:flex-row items-center justify-center md:p-5">
+    <div class="my-8 lg:ml-20 w-full">
+      <h2 class="mb-10 text-4xl lg:text-7xl font-semibold leading-tight text-green-600 italic">
         Contact Me
       </h2>
       <p class="tracking-widest font-semibold italic">
@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="w-full">
-      <div class="w-3/4 mx-auto">
+      <div class="lg:w-3/4 mx-auto">
         <div class="w-full flex mb-2">
           <div class="w-full mr-1">
             <input type="text"
@@ -35,7 +35,7 @@
         </div>
         <div class="w-full text-right">
           <span
-          class="contact_me_btn py-3 px-20 border-2 border-green-600 text-green-600 tracking-widest font-semibold rounded cursor-pointer"
+          class="contact_me_btn py-3  p-10 md:px-20 border-2 border-green-600 text-green-600 tracking-widest font-semibold rounded cursor-pointer"
           @click="sendMessage"
           >Contact me!</span>
         </div>
