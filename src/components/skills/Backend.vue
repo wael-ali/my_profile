@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full">
-    <div class="p-20 font-semibold tracking-widest italic">
+    <div class="p-4 lg:p-8 font-semibold tracking-widest italic">
       <div class="mb-10">
         <div>Express</div>
         <div class="w-full h-1 bg-gray-700">
