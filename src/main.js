@@ -4,12 +4,12 @@ import router from './router'
 import store from './store'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFontAwesome, faLinkedin, faXingSquare, faGitSquare } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faIdCard, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faIdCard, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import './assets/css/index.css'
 
-library.add(faHome, faUser, faIdCard, faEnvelope, faFontAwesome, faLinkedin, faXingSquare, faGitSquare)
+library.add(faHome, faUser, faIdCard, faEnvelope, faFontAwesome, faLinkedin, faXingSquare, faGitSquare, faBars, faTimes)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
