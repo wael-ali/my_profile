@@ -1,41 +1,57 @@
 <template>
-  <div id="app" class="flex flex-row min-h-screen text-gray-400">
-    <div id="nav" class="bg-gray-900 w-1/12 shadow-2xl flex flex-col items-center h-screen fixed">
-      <div class="mt-10">
-        <img src="./assets/my_github_imag.jpeg"
-          alt="Wael Ali foto"
-          class="w-24 h-24 rounded-full"
-          @click="goToHomePage"
-        >
+  <div id="app" class="flex flex-col items-center text-gray-400 md:flex-row md:min-h-screen">
+    <div id="nav" class="bg-gray-900 w-full md:w-2/12 shadow-2xl flex flex-col items-center content-center md:h-screen md:fixed">
+      <div class="mt-5 w-full flex flex-row justify-between items-center md:mt-10 md:flex-col">
+        <div class="ml-4 md:mx-auto">
+          <img src="./assets/my_github_imag.jpeg"
+            alt="Wael Ali foto"
+            class="w-16 h-16 sm:w-14 sm:h-12 md:w-24 md:h-24 rounded-full"
+            @click="goToHomePage"
+          >
+        </div>
+        <div class="mr-4 md:mx-auto">
+          <div v-if="!navIsOpen">
+            <span @click="toggleNav" class="text-3xl">
+              <font-awesome-icon icon="bars" title="Home"/>
+            </span>
+          </div>
+          <div v-if="navIsOpen">
+            <span @click="toggleNav" class="text-3xl">
+              <font-awesome-icon icon="times" title="Home"/>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col items-center h-full justify-center">
-        <router-link to="/" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="home" size="2x" title="Home"/>
-        </router-link>
-        <router-link to="/about" class="w-full text-center p-2">
-          <font-awesome-icon icon="user" size="2x" title="About"/>
-        </router-link>
-        <router-link to="skills" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="id-card" size="2x" title="Skills"/>
-        </router-link>
-        <router-link to="/contact" class="w-full text-center p-2 ">
-          <font-awesome-icon icon="envelope" size="2x" title="Contact Me"/>
-        </router-link>
-      </div>
-      <div class="mb-10">
-        <a href="#" class="w-full text-center p-2 ">
-          <font-awesome-icon :icon="['fab', 'xing-square']" size="2x"/>
-        </a>
-        <a href="https://www.linkedin.com/in/wael-ali-b99a61162" class="w-full text-center p-2 ">
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"/>
-        </a>
-        <a to="#" class="w-full text-center p-2 ">
-          <font-awesome-icon :icon="['fab', 'git-square']" size="2x"/>
-        </a>
-      </div>
+     <div v-if="navIsOpen"
+     class="flex flex-col items-center md:h-full justify-center"
+     >
+       <router-link to="/" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon icon="home" title="Home"/>
+       </router-link>
+       <router-link to="/about" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon icon="user" title="About"/>
+       </router-link>
+       <router-link to="skills" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon icon="id-card" title="Skills"/>
+       </router-link>
+       <router-link to="/contact" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon icon="envelope" title="Contact Me"/>
+       </router-link>
+     </div>
+     <div class="md:mb-10 mt-auto">
+       <a href="#" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon :icon="['fab', 'xing-square']" />
+       </a>
+       <a href="https://www.linkedin.com/in/wael-ali-b99a61162" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon :icon="['fab', 'linkedin']"/>
+       </a>
+       <a to="#" class="w-full text-center p-2 text-3xl">
+         <font-awesome-icon :icon="['fab', 'git-square']"/>
+       </a>
+     </div>
     </div>
-    <div class="w-11/12 ml-auto bg-teritary home">
-      <router-view/>
+    <div class="min-h-screen w-full bg-teritary md:w-10/12 md:ml-auto home">
+     <!-- <router-view/> -->
     </div>
   </div>
 </template>
@@ -43,9 +59,17 @@
 <script>
 export default {
   name: 'App',
+  data () {
+    return {
+      navIsOpen: false
+    }
+  },
   methods: {
     goToHomePage () {
       this.$router.push({ name: 'Home' })
+    },
+    toggleNav () {
+      this.navIsOpen = !this.navIsOpen
     }
   }
 }
