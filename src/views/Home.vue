@@ -1,18 +1,20 @@
 <template>
-  <div class="w-full h-full flex place-items-center">
-    <div class="ml-20">
-      <h1 class="mb-10 text-7xl font-semibold leading-tight italic">
-        Hi, <br/>
-        I'm Wael Ali, <br/>
-        web developer
-      </h1>
-      <p class="mb-20 tracking-widest font-semibold">Fullstack Developer / Back End Developer</p>
-      <p>
-        <span
-        class="contact_me_btn py-3 px-20 border-2 border-green-600 text-green-600 tracking-widest font-semibold rounded cursor-pointer"
-        @click="goToContactPage"
-        >Contact me!</span>
-      </p>
+  <div class="w-full min-h-screen flex justify-center items-center">
+    <div class="w-full ml-10 md:ml-20">
+      <div>
+        <h1 class="mb-10 text-3xl md:text-7xl font-semibold leading-tight italic">
+          Hi, <br/>
+          I'm Wael Ali, <br/>
+          web developer
+        </h1>
+        <p class="mb-20 tracking-widest font-semibold">Fullstack Developer / Back End Developer</p>
+        <p>
+          <span
+          class="contact_me_btn border-2 border-green-600 text-green-600 tracking-widest font-semibold rounded cursor-pointer py-3 px-12 md:px-20"
+          @click="goToContactPage"
+          >Contact me!</span>
+        </p>
+      </div>
     </div>
   </div>
 </template>

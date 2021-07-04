@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="flex flex-col items-center text-gray-400 md:flex-row md:min-h-screen">
+  <div id="app" class="w-screen flex flex-col items-center text-gray-400 md:flex-row">
     <div id="nav" class="bg-gray-900 w-full md:w-2/12 shadow-2xl flex flex-col items-center content-center md:h-screen md:fixed">
       <div class="mt-5 w-full flex flex-row justify-between items-center md:mt-10 md:flex-col">
         <div class="ml-4 md:mx-auto">
@@ -50,8 +50,9 @@
        </a>
      </div>
     </div>
-    <div class="min-h-screen w-full bg-teritary md:w-10/12 md:ml-auto home">
-     <!-- <router-view/> -->
+    <!-- <div class="h-full md:h-screen w-full bg-teritary md:w-10/12 md:ml-auto home"> -->
+    <div class="min:h-full w-full bg-teritary md:h-screen md:w-10/12 md:ml-auto home">
+     <router-view/>
     </div>
   </div>
 </template>
