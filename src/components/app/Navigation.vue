@@ -13,14 +13,17 @@
           <!-- Bars Icons -->
           <div class="mr-4 md:mx-auto md:mt-10">
             <div v-if="!navIsOpen">
-           <span @click="toggleNav" class="text-3xl">
-             <font-awesome-icon icon="bars" title="Home"/>
-           </span>
+              <span @click="toggleNav" class="text-3xl">
+                <font-awesome-icon icon="bars" title="Home"/>
+              </span>
             </div>
             <div v-if="navIsOpen">
-           <span @click="toggleNav" class="text-3xl">
-             <font-awesome-icon icon="times" title="Home"/>
-           </span>
+              <span @click="toggleNav" class="text-3xl">
+                <font-awesome-icon icon="times" title="Home"/>
+              </span>
+            </div>
+            <div>
+              <h3>{{ windowWidth }}</h3>
             </div>
           </div>
         </div>
@@ -30,17 +33,17 @@
         <div v-if="navIsOpen"
              class="flex flex-col items-center justify-center"
         >
-          <router-link to="/" class="text-center p-2 text-3xl">
-            <font-awesome-icon icon="home" title="Home"/>
+          <router-link  to="/" class="text-center p-2 text-3xl">
+            <font-awesome-icon @click="toggleNav('navbar-icon')" icon="home" title="Home"/>
           </router-link>
-          <router-link to="/about" class="text-center p-2 text-3xl">
-            <font-awesome-icon icon="user" title="About"/>
+          <router-link  to="/about" class="text-center p-2 text-3xl">
+            <font-awesome-icon @click="toggleNav('navbar-icon')" icon="user" title="About"/>
           </router-link>
-          <router-link to="skills" class="text-center p-2 text-3xl">
-            <font-awesome-icon icon="id-card" title="Skills"/>
+          <router-link  to="skills" class="text-center p-2 text-3xl">
+            <font-awesome-icon @click="toggleNav('navbar-icon')" icon="id-card" title="Skills"/>
           </router-link>
-          <router-link to="/contact" class="text-center p-2 text-3xl">
-            <font-awesome-icon icon="envelope" title="Contact Me"/>
+          <router-link  to="/contact" class="text-center p-2 text-3xl">
+            <font-awesome-icon @click="toggleNav('navbar-icon')" icon="envelope" title="Contact Me"/>
           </router-link>
         </div>
       </div>
@@ -67,15 +70,36 @@ export default {
   name: 'Navigation',
   data () {
     return {
-      navIsOpen: false
+      navIsOpen: false,
+      windowWidth: window.innerWidth
+
     }
   },
   methods: {
     goToHomePage () {
       this.$router.push({ name: 'Home' })
     },
-    toggleNav () {
-      this.navIsOpen = !this.navIsOpen
+    toggleNav (buttonType) {
+      switch (buttonType) {
+        case 'navbar-icon':
+          if (this.windowWidth < 768) {
+            this.navIsOpen = !this.navIsOpen
+          }
+          break
+        default:
+          this.navIsOpen = !this.navIsOpen
+          break
+      }
+    }
+  },
+  mounted () {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth
+      if (window.innerWidth < 768) {
+        this.navIsOpen = false
+      } else {
+        this.navIsOpen = true
+      }
     }
   }
 }
