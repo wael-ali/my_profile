@@ -65,8 +65,10 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  if (to.path === '/skills/skills') {
-    next({ name: 'skills' })
+  if (to.path === '/skills') {
+    next({ name: 'backend-skills' })
+  } else if (to.path === '/skills/skills') {
+    next({ name: 'backend-skills' })
   } else {
     next()
   }
